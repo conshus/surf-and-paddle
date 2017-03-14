@@ -7,8 +7,10 @@
   </head>
   <body>
     <header>
-      <img src="assets/logo.png" />
-      <h1>Surf & Paddle Co. Blog</h1>
+      <section class="logo">
+        <img src="assets/logo.png" />
+        <h3>Surf & Paddle Co. Blog</h3>
+      </section>
       <nav>
         <ul>
           <li><a href="">About</a></li>
@@ -16,57 +18,60 @@
           <li><a href=""><img src="assets/search-icon.png" /></a></li>
         </ul>
       </nav>
-      <img src="assets/header.jpg" />
-      <h5 class="tagline"><strong>An Ironyard Academy Project Est. Fall 2013</strong></h5>
+      <section class="title">
+        <h1>Surf & Paddle Co. Blog</h1>
+        <h5 class="tagline"><strong>An Ironyard Academy Project Est. Fall 2013</strong></h5>
+        <!-- Correction: <div class="tagline"><strong>An Ironyard Academy Project Est. Fall 2013</strong></div> -->
+      </section>
     </header>
-    <article>
-      <header class="article_header">
-        <h4>A fantastic engaging headline goes here</h4>
-      </header>
-      <section class="article_info">
-        <img src="assets/avatar.png"/>
-        <a href="#">Anne Marie</a> on <time datetime="2016-10-07 21:22">Monday Oct. 7 9:22pm</time>
-      </section>
-      <section class="article_body">
-        <p>Bacon ipsum dolor amet culpa jowl turkey tenderloin pariatur mollit occaecat in labore biltong deserunt sausage tongue adipisicing. Aliquip bresaola tri-tip landjaeger cupim swine mollit. Consequat in kevin ad, short loin magna sed. Ad nulla turducken incididunt, exercitation jerky ut cupidatat enim.</p>
-        <p>Commodo elit ham hock do cupidatat. Beef ribs fugiat shoulder pancetta filet mignon doner meatloaf leberkas pig. Alcatra jowl ea chicken, dolore strip steak venison deserunt do. Enim rump pork loin, eiusmod bresaola turducken meatball shoulder aliqua do prosciutto nisi chicken voluptate brisket. Turducken sirloin sed, in labore kielbasa commodo.</p>
-        <h5>
+    <section class="main">
+      <article>
+          <h4 class="article_header">A fantastic engaging headline goes here</h4>
+        <section class="article_info">
+          <img src="assets/avatar.png"/>
+          <a href="#">Anne Marie</a> on <time datetime="2016-10-07 21:22">Monday Oct. 7 9:22pm</time>
+        </section>
+        <section class="article_body">
+          <p>Bacon ipsum dolor amet culpa jowl turkey tenderloin pariatur mollit occaecat in labore biltong deserunt sausage tongue adipisicing. Aliquip bresaola tri-tip landjaeger cupim swine mollit. Consequat in kevin ad, short loin magna sed. Ad nulla turducken incididunt, exercitation jerky ut cupidatat enim.</p>
+          <p>Commodo elit ham hock do cupidatat. Beef ribs fugiat shoulder pancetta filet mignon doner meatloaf leberkas pig. Alcatra jowl ea chicken, dolore strip steak venison deserunt do. Enim rump pork loin, eiusmod bresaola turducken meatball shoulder aliqua do prosciutto nisi chicken voluptate brisket. Turducken sirloin sed, in labore kielbasa commodo.</p>
           <blockquote>
-            <p>Whoa, that's radical!</p>
+            Whoa, that's radical!
           </blockquote>
-        </h5>
-        <p>Pastrami salami non leberkas, veniam eiusmod andouille t-bone ut. Mollit prosciutto velit brisket dolore deserunt labore eu consequat t-bone filet mignon fugiat culpa. Capicola tongue enim nostrud. Picanha consequat pastrami tri-tip cow jowl chicken duis eu irure reprehenderit consectetur pig.</p>
-        <p>Ground round enim corned beef qui cupim ut shank anim veniam quis do porchetta. Ground round chicken shank, elit qui sed ipsum frankfurter nisi est landjaeger. Eiusmod pork loin nisi pastrami ex rump excepteur occaecat ullamco. Eiusmod chicken meatloaf pork belly et, tenderloin venison eu.</p>
-      </section>
-      <ul class="article_footer">
-        <!-- Wasn't sure whether to use <a> or <button> here-->
-        <li><a href="#"><img src="assets/icon-comment.png" class="icon">Read Comments</a></li>
-        <li><a href="#"><img src="assets/icon-upload.png" class="icon">Read Later</a></li>
-        <li><a href="#"><img src="assets/icon-share.png" class="icon">Share This Post</a></li>
-      </ul>
-    </article>
-    <aside>
-      <img src="assets/avatar.png"/>
-      <h3>Anne Marie</h3>
-      <ul>
-        <li>Twitter</li>
-        <li>Facebook</li>
-        <li>Instagram</li>
-      </ul>
-      <img src="assets/ad.jpg" class="ad"><a href="#">About This Ad</a>
-      <section>
-        <h3>Sidebar Section Heading</h3>
-        <p>Bacon ipsum dolor amet culpa jowl turkey tenderloin pariatur mollit occaecat in labore biltong deserunt sausage tongue adipisicing. Aliquip bresaola tri-tip landjaeger cupim swine mollit.</p>
-      </section>
-    </aside>
+          <p>Pastrami salami non leberkas, veniam eiusmod andouille t-bone ut. Mollit prosciutto velit brisket dolore deserunt labore eu consequat t-bone filet mignon fugiat culpa. Capicola tongue enim nostrud. Picanha consequat pastrami tri-tip cow jowl chicken duis eu irure reprehenderit consectetur pig.</p>
+          <p>Ground round enim corned beef qui cupim ut shank anim veniam quis do porchetta. Ground round chicken shank, elit qui sed ipsum frankfurter nisi est landjaeger. Eiusmod pork loin nisi pastrami ex rump excepteur occaecat ullamco. Eiusmod chicken meatloaf pork belly et, tenderloin venison eu.</p>
+        </section>
+        <ul class="article_footer">
+          <!-- Wasn't sure whether to use <a> or <button> here-->
+          <li><a href="#"><img src="assets/icon-comment.png" class="icon">Read Comments</a></li>
+          <li><a href="#"><img src="assets/icon-upload.png" class="icon">Read Later</a></li>
+          <li><a href="#"><img src="assets/icon-share.png" class="icon">Share This Post</a></li>
+        </ul>
+      </article>
+      <aside>
+        <section class="author">
+          <img src="assets/avatar.png"/>
+          <h3>Anne Marie</h3>
+          <ul>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+          </ul>
+        </section>
+        <a href="#"><img src="assets/ad.jpg" class="ad"><h6>About This Ad</h6></a>
+        <section>
+          <h3>Sidebar Section Heading</h3>
+          <p>Bacon ipsum dolor amet culpa jowl turkey tenderloin pariatur mollit occaecat in labore biltong deserunt sausage tongue adipisicing. Aliquip bresaola tri-tip landjaeger cupim swine mollit.</p>
+        </section>
+      </aside>
+    </section>
     <hr>
     <section class="popular">
       <h2>Most Popular Posts</h2>
       <ul>
-        <li><a href="#"><img src="assets/article-image-1.jpg">Another Cool Post</a></li>
-        <li><a href="#"><img src="assets/article-image-2.jpg">Post Title</a></li>
-        <li><a href="#"><img src="assets/article-image-3.jpg">Here's Another Longer Post Title</a></li>
-        <li><a href="#"><img src="assets/article-image-4.jpg">Oh Cool a Post</a></li>
+        <li><a href="#"><img src="assets/article-image-1.jpg"><span class="pop_post_title">Another Cool Post</span></a></li>
+        <li><a href="#"><img src="assets/article-image-2.jpg"><span class="pop_post_title">Post Title</span></a></li>
+        <li><a href="#"><img src="assets/article-image-3.jpg"><span class="pop_post_title">Here's Another Longer Post Title</span></a></li>
+        <li><a href="#"><img src="assets/article-image-4.jpg"><span class="pop_post_title">Oh Cool a Post</span></a></li>
       </ul>
     </section>
     <footer>
