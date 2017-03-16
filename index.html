@@ -3,89 +3,91 @@
   <head>
     <meta charset="utf-8" />
     <title>Surf & Paddle Co.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Hind+Guntur" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <header>
-      <section class="logo">
-        <img src="assets/logo.png" />
-        <h3>Surf & Paddle Co. Blog</h3>
-      </section>
-      <nav>
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Search</a></li>
-          <li><a href=""><img src="assets/search-icon.png" /></a></li>
-        </ul>
-      </nav>
-      <section class="title">
-        <h1>Surf & Paddle Co. Blog</h1>
-        <h5 class="tagline"><strong>An Ironyard Academy Project Est. Fall 2013</strong></h5>
-        <!-- Correction: <div class="tagline"><strong>An Ironyard Academy Project Est. Fall 2013</strong></div> -->
-      </section>
+      <div class="flex space_around">
+        <div class="brand logo flex vcenter">
+          <img src="assets/logo.png" />
+          <div class="hind_guntur uppercase">Surf & Paddle Co. Blog</div>
+        </div>
+        <nav>
+          <ul class="oswald uppercase flex vcenter">
+            <li><a href="">About</a></li>
+            <li><a href="">Search <i class="fa fa-search fa-flip-horizontal"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="titleholder flex fcolumn vcenter hcenter">
+        <div class="title hind_guntur uppercase">Surf & Paddle Co.</div>
+        <div class="tagline hind_guntur"><strong>An Ironyard Academy Project Est. Fall 2013</strong></div>
+      </div>
     </header>
     <section class="main">
       <article>
-          <h4 class="article_header">A fantastic engaging headline goes here</h4>
+        <div class="article_header oswald uppercase">A fantastic engaging headline goes here</div>
         <section class="article_info">
           <img src="assets/avatar.png"/>
           <a href="#">Anne Marie</a> on <time datetime="2016-10-07 21:22">Monday Oct. 7 9:22pm</time>
         </section>
-        <section class="article_body">
+        <section class="article_body hind_guntur">
           <p>Bacon ipsum dolor amet culpa jowl turkey tenderloin pariatur mollit occaecat in labore biltong deserunt sausage tongue adipisicing. Aliquip bresaola tri-tip landjaeger cupim swine mollit. Consequat in kevin ad, short loin magna sed. Ad nulla turducken incididunt, exercitation jerky ut cupidatat enim.</p>
           <p>Commodo elit ham hock do cupidatat. Beef ribs fugiat shoulder pancetta filet mignon doner meatloaf leberkas pig. Alcatra jowl ea chicken, dolore strip steak venison deserunt do. Enim rump pork loin, eiusmod bresaola turducken meatball shoulder aliqua do prosciutto nisi chicken voluptate brisket. Turducken sirloin sed, in labore kielbasa commodo.</p>
-          <blockquote>
-            Whoa, that's radical!
+          <blockquote class="uppercase">
+            Woah, that's radical!
           </blockquote>
           <p>Pastrami salami non leberkas, veniam eiusmod andouille t-bone ut. Mollit prosciutto velit brisket dolore deserunt labore eu consequat t-bone filet mignon fugiat culpa. Capicola tongue enim nostrud. Picanha consequat pastrami tri-tip cow jowl chicken duis eu irure reprehenderit consectetur pig.</p>
           <p>Ground round enim corned beef qui cupim ut shank anim veniam quis do porchetta. Ground round chicken shank, elit qui sed ipsum frankfurter nisi est landjaeger. Eiusmod pork loin nisi pastrami ex rump excepteur occaecat ullamco. Eiusmod chicken meatloaf pork belly et, tenderloin venison eu.</p>
         </section>
-        <ul class="article_footer">
-          <!-- Wasn't sure whether to use <a> or <button> here-->
-          <li><a href="#"><img src="assets/icon-comment.png" class="icon">Read Comments</a></li>
-          <li><a href="#"><img src="assets/icon-upload.png" class="icon">Read Later</a></li>
-          <li><a href="#"><img src="assets/icon-share.png" class="icon">Share This Post</a></li>
+        <ul class="article_footer hind_guntur">
+          <li><a href="#"><i class="fa fa-comment" aria-hidden="true"></i><span class="button_text">Read Comments</span></a></li>
+          <li><a href="#"><i class="fa fa-cloud-upload" aria-hidden="true"></i><span class="button_text">Read Later</span></a></li>
+          <li><a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i><span class="button_text">Share This Post</span></a></li>
         </ul>
       </article>
       <aside>
-        <section class="author">
+        <section class="author flex fcolumn vcenter">
           <img src="assets/avatar.png"/>
-          <h3>Anne Marie</h3>
+          <p class="heading uppercase">Anne Marie</p>
           <ul>
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>Instagram</li>
+            <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
           </ul>
         </section>
-        <a href="#"><img src="assets/ad.jpg" class="ad"><h6>About This Ad</h6></a>
-        <section>
-          <h3>Sidebar Section Heading</h3>
-          <p>Bacon ipsum dolor amet culpa jowl turkey tenderloin pariatur mollit occaecat in labore biltong deserunt sausage tongue adipisicing. Aliquip bresaola tri-tip landjaeger cupim swine mollit.</p>
+        <a class="ad" href="#"><img src="assets/ad.jpg" class="ad"><p class="ad_text">About This Ad</p></a>
+        <section class="sidebar_heading">
+          <p class="oswald uppercase heading">Sidebar Section Heading</p>
+          <p class="hind_guntur">Bacon ipsum dolor amet culpa jowl turkey tenderloin pariatur mollit occaecat in labore biltong deserunt sausage tongue adipisicing. Aliquip bresaola tri-tip landjaeger cupim swine mollit.</p>
         </section>
       </aside>
     </section>
-    <hr>
-    <section class="popular">
-      <h2>Most Popular Posts</h2>
-      <ul>
-        <li><a href="#"><img src="assets/article-image-1.jpg"><span class="pop_post_title">Another Cool Post</span></a></li>
-        <li><a href="#"><img src="assets/article-image-2.jpg"><span class="pop_post_title">Post Title</span></a></li>
-        <li><a href="#"><img src="assets/article-image-3.jpg"><span class="pop_post_title">Here's Another Longer Post Title</span></a></li>
-        <li><a href="#"><img src="assets/article-image-4.jpg"><span class="pop_post_title">Oh Cool a Post</span></a></li>
+    <section class="popular flex fcolumn center">
+      <p class="oswald uppercase">Most Popular Posts</p>
+      <ul class="flex">
+        <li><a href="#"><div class="tint flex flex_end oswald uppercase">Another Cool Post</div><img src="assets/article-image-1.jpg"><div class="pop_post_title oswald uppercase"></div></a></li>
+        <li><a href="#"><div class="tint flex flex_end oswald uppercase">Post Title</div><img src="assets/article-image-2.jpg"><div class="pop_post_title oswald uppercase"></div></a></li>
+        <li><a href="#"><div class="tint flex flex_end oswald uppercase">Here's Another Longer Post Title</div><img src="assets/article-image-3.jpg"><div class="pop_post_title oswald uppercase"></div></a></li>
+        <li><a href="#"><div class="tint flex flex_end oswald uppercase">Oh Cool a Post!</div><img src="assets/article-image-4.jpg"><div class="pop_post_title oswald uppercase"></div></a></li>
       </ul>
     </section>
-    <footer>
-      <section>
-        <img src="assets/theironyard-logo.png">The Ironyard Copyright 2013, All Rights Reserved
+    <footer class="flex space_around">
+      <section class="hind_guntur flex vcenter">
+        <img src="assets/theironyard-logo.png">
+        <p>The Ironyard Copyright 2013, All Rights Reserved</p>
       </section>
-      <nav>
+      <nav class="hind_guntur">
         <ul>
-          <li><a href="#">Nav Item 1</a></li>
-          <li><a href="#">Nav Item 2</a></li>
-          <li><a href="#">Nav Item 3</a></li>
+          <li><a href="#">Nav Item 1</a> | </li>
+          <li><a href="#">Nav Item 2</a> | </li>
+          <li><a href="#">Nav Item 3</a> | </li>
           <li><a href="#">Nav Item 5</a></li>
         </ul>
       </nav>
     </footer>
+    <script src="https://use.fontawesome.com/4876f1953d.js"></script>
   </body>
 </html>
